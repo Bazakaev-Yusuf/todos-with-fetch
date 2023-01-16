@@ -44,8 +44,9 @@ function App(){
                {todos.map((item, idx) => {
                return(
                   <li key={item.id} className='list list-group-item d-flex '>
-                     <div>
-                        {idx + 1}) {item.title}
+                     <div className="text-block">
+                        <h5 className="text-block__title">{idx + 1}) {item.title}</h5>
+                        <p className="text-block__subtitle">{item.body}</p>
                      </div>
                      <button onClick={() => deleteTodo(item.id)} className="remove-btn"></button>
                   </li>
