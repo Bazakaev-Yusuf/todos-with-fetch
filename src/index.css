@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.loading{
+   background-image: url(./img/chingiz.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 1200px;
+   height: 100ch;
+   text-align: center;
+   position: relative;
+   margin: auto;
+   margin-top: 40px;
+}
+.btn-show{
+   display: block;
+   padding: 5px;
+   border-radius: 20px;
+   background-color: transparent;
+   position: absolute;
+   left: 9.5%;
+   top: 9%;
+}
+.remove-btn{
+   display: block;
+   background: transparent;
+   border-color: brown;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-image: url(./img/remove-img.png);
+   background-size: cover;
+   background-position: -50px 50px;
+   background-repeat: no-repeat;
+   transition: all 2s;
+   position: relative;
+   right: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.remove-btn:hover{
+   background-position: 0 0;
+   transition: all 0.2s;
+   border-color: rgb(12, 12, 175);
+}
+.list{
+   width: 80%;
+   margin: auto;
+   align-items: center;
+   height: 80px;
+   justify-content: space-between;
+}
+.todos{
+   text-align: center;
+   padding-top: 40px;
 }
